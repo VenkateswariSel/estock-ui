@@ -1,0 +1,22 @@
+.box-shadow{
+    
+    box-shadow: h-offset v-offset blur color;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+     
+    }
+
+
+    .form-group{
+   
+         box-shadow: h-offset v-offset blur color;
+         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+         margin: 5px auto; 
+         width:400px; 
+         padding-top:10px;
+         padding-bottom:10px;
+         padding-left:10px;
+         height: 400px;
+         padding-right: 10px;
+         border-radius: 5px;
+             
+         }

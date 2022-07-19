@@ -1,0 +1,21 @@
+<header class="p-3 text-white">
+    <div class="container nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+      <!-- <div class="d-flex flex-wrap align-items-center  justify-content-center justify-content-lg-start "> -->
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a *ngIf="loggedIn" href="#" class="nav-link px-2 text-white">Add Company</a></li>
+          <li><a *ngIf="loggedIn" class="nav-link px-2 text-white" >List All Companies</a></li>
+          <li><p *ngIf="!loggedIn">Estock Dashboard</p></li>
+        </ul>
+        <div >
+          <div class="input-group">
+            <input type="search" *ngIf="loggedIn" class="form-control rounded" placeholder="Company Code" aria-label="Search" aria-describedby="search-addon" [(ngModel)]="companycode" />
+          <button type="button" *ngIf="loggedIn" class="btn btn-primary" (click)="searchCompany()">search</button>
+          <button type="button" *ngIf="loggedIn" class="btn btn-outline-info" (click)="logout()">Logout</button>
+          </div>
+          
+        </div>
+      <!-- </div> -->
+    </div>
+  </header>
+  <div class="alert alert-primary" *ngIf="noCompany">No company details found for the company code</div>
